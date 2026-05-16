@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Mijn favoriete voetbalclub</title>
+<script
+src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script >
+$(document).ready(function() {
+$("#knop").click(function() {
+var naam = $("#naam").val();
+var voetbalclub = $("#voetbalclub").val();
+var stadion = $("#stadion").val();
+var werelkampioen = $("#wereldkampioen").val();
+
+window.alert(
+"Ik ben "  + naam +
+" mijn favoriete voetbalclub is " + voetbalclub +
+" zij spelen in stadion " + stadion +
+" mijn voorspelling werelkampioen is " + werelkampioen
+);
+});
+});
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<form>
+    <h1>Wat is Uw Favoriete voetbalclub</h1><br><br>
+
+    <label for="naam">Wat is uw naam?</label>
+    <input type="text" id="naam" ><br><br>
+
+    <label for="voetbalclub"> Uw favoriete voetbalclub?</label>
+    <input type="text" id="voetbalclub"><br><br>
+
+    <label for="stadion"> welk stadion spelen zij?</label>
+    <input type="text" id="stadion"><br><br>
+
+    <label for="wereldkampioen"> welk land wordt wereldkampioen?</label>
+    <input type="text" id="wereldkampioen"><br><br>
+
+    <input id="knop" name="knop" type="button"
+    value="Klik op deze knop">
+</form>
+<noscript>
+    Op deze website optimaal te gebruiken is het noodzakelijk om Javascript te activeren
+</noscript>
+</body>
+</html>
